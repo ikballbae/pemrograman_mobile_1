@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'latihan2.dart';
+import '04_layout.dart';
 
 void main() {
-  runApp(const Latihan2());
+  runApp(const Layout());
 }
