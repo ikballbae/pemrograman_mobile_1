@@ -6,8 +6,26 @@ class Latihan2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.blue,
+          foregroundColor: Colors.white,
+          titleTextStyle: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
+      ),
       home: Scaffold(
-        appBar: AppBar(title: const Text("Sejarah IWIMA"), centerTitle: true),
+        appBar: AppBar(
+          title: const Text(
+            "Sejarah IWIMA",
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          centerTitle: true,
+        ),
         body: ListView(
           padding: const EdgeInsets.all(
             16.0,
